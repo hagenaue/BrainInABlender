@@ -1,0 +1,16 @@
+Package: BrainInABlender
+Title: Estimates Cell Type Balance in Brain Cortical Samples Using Microarray or
+    RNAseq Data
+Version: 0.0.0.9000
+Authors@R: c(person("Megan", "Hagenauer", email="hagenaue@umich.edu", role=c("aut", "cre")), person("Alek", "Panko", email="apanko@umich.edu", role="aut"))
+Description: This package uses microarray or RNAseq data derived from
+    heterogeneous brain cortical samples to estimate the relative balance of each
+    cell type across samples. To do this, we include a database of genes that have
+    been previously indicated to have cell type specific expression in either the
+    forebrain or cortex of humans or mice.
+Depends:
+    R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
