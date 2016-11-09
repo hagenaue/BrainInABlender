@@ -2,7 +2,7 @@ Package: BrainInABlender
 Title: Estimates Cell Type Balance in Brain Cortical Samples Using Microarray or
     RNAseq Data
 Version: 0.0.0.9000
-Authors@R: c(person("Megan", "Hagenauer", email="hagenaue@umich.edu", role=c("aut", "cre")), person("Alek", "Panko", email="apanko@umich.edu", role="aut"))
+Authors@R: c(person("Megan", "Hagenauer", email="hagenaue@umich.edu", role=c("aut", "cre")), person("Alek", "Pankonin", email="apanko@umich.edu", role="aut"))
 Description: This package uses microarray or RNAseq data derived from
     heterogeneous brain cortical samples to estimate the relative balance of each
     cell type across samples. To do this, we include a database of genes that have
