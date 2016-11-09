@@ -3,9 +3,9 @@
 #' This function uses Microarray or RNAseq data derived from heterogeneous brain cortical samples to estimate the relative balance of each cell type across samples. To do this, we use a database(CellTypeSpecificGenes_Master3) of genes that have been previously-indicated to have cell type specific expression in either the forebrain or cortex of humans or mice. 
 
 #' @param userInput A dataframe containing the gene expression data for the samples (RNAseq or microarray data that has already been variance stabilized and received appropriate quality control to remove outlier samples and large-scale technical artifacts), including one column of gene symbols.  Defaults to Error.
-#' @param dataColumns A vector containing the column numbers for the gene expression data in the dataframe. Defaults to Error.
-#' @param geneColumn A single integer indicating the column number for the column that includes the gene symbols. Defaults to Error.
-#' @param species A single character string indicating the species from which the data were derived, currently allows the values  "mouse", "Mouse", "human", or "Human". Defaults to "mouse".
+#' @param dataColumns A vector containing the column numbers for the gene expression data in the dataframe. 
+#' @param geneColumn A single integer indicating the column number for the column that includes the gene symbols. 
+#' @param species A single character string indicating the species from which the data were derived, currently allows the values  "mouse", "Mouse", "human", or "Human". 
 #' @return A list containing two data frames: PublicationSpecific_CellTypeIndex and AveragePrimary_CellTypeIndex. These data frames provide estimates for the relative balance of each cell type across samples. The first data frame provides estimates based on the cell type specific gene lists provided by particular publications ("cell type indices"), the second data frame averages each of the publication-specific cell type indices to create an average cell type index for each primary cell type.
 #' @importFrom plyr join
 #' @keywords brain cortex cell type matrix deconvolution microarray RNAseq
