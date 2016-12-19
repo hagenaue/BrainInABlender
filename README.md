@@ -1,29 +1,38 @@
-This package was created using R version 3.3.1
+####This package was created using R version 3.3.1
 
-Installation instructions: To install this package you must have devtools installed. Devtools allows the user to install packages directly from github. Once devtools is installed, install the BrainInABlender package from Github using the code below. This will give you access to the Sir_UnMixALot function.
 
-Installation Code:
+####Installation instructions:
+To install this package you must have devtools installed. Devtools allows the user to install packages directly from github. Once devtools is installed, install the BrainInABlender package from Github using the code below. This will give you access to the Sir_UnMixALot function.
 
-Install.packages("devtools")
 
-library("devtools")
+####Installation Code:
 
-install_github("hagenaue/BrainInABlender")
+    Install.packages("devtools")
 
-library("BrainInABlender")
+    library("devtools")
 
-Dependencies: This function makes use of the plyr package for its join function. 
+    install_github("hagenaue/BrainInABlender")
+
+    library("BrainInABlender")
+
+####Dependencies: 
+This function makes use of the plyr package for its join function. 
 
 Sir_UnMixALot uses Microarray or RNAseq data derived from heterogeneous brain cortical samples to estimate the relative balance of each cell type across samples. To do this, we use a database(CellTypeSpecificGenes_Master3) of genes that have been previously-indicated to have cell type specific expression in either the forebrain or cortex of humans or mice.
 
-Input: A dataframe containing the gene expression data for the samples (RNAseq or microarray data that has already been variance stabilized and received appropriate quality control to remove outlier samples and large-scale technical artifacts), including one column of gene symbols. Defaults to Error. You must also have single character string indicating the species from which the data were derived, currently allows the values "mouse", "Mouse", "human", or "Human". 
 
-Output: A list containing two data frames: PublicationSpecific_CellTypeIndex and AveragePrimary_CellTypeIndex. These data frames provide estimates for the relative balance of each cell type across samples. The first data frame provides estimates based on the cell type specific gene lists provided by particular publications ("cell type indices"), the second data frame averages each of the publication-specific cell type indices to create an average cell type index for each primary cell type.
-
-Example function call: Sir_UnMixALot(userInput=ZhangRNAseqData, dataColumns=c(2:18), geneColumn=1, species="mouse")
+####Input:
+A dataframe containing the gene expression data for the samples (RNAseq or microarray data that has already been variance stabilized and received appropriate quality control to remove outlier samples and large-scale technical artifacts), including one column of gene symbols. Defaults to Error. You must also have single character string indicating the species from which the data were derived, currently allows the values "mouse", "Mouse", "human", or "Human". 
 
 
-Full List of Citations included in the Database:
+####Output:
+A list containing two data frames: PublicationSpecific_CellTypeIndex and AveragePrimary_CellTypeIndex. These data frames provide estimates for the relative balance of each cell type across samples. The first data frame provides estimates based on the cell type specific gene lists provided by particular publications ("cell type indices"), the second data frame averages each of the publication-specific cell type indices to create an average cell type index for each primary cell type.
+
+####Example function call:
+Sir_UnMixALot(userInput=ZhangRNAseqData, dataColumns=c(2:18), geneColumn=1, species="mouse")
+
+
+####Full List of Citations included in the Database:
 
 Cahoy JD, Emery B, Kaushal A, Foo LC, Zamanian JL, Christopherson KS, et al. A transcriptome database for astrocytes, neurons, and oligodendrocytes: a new resource for understanding brain development and function. J Neurosci Off J Soc Neurosci. 2008 Jan 2;28(1):264–78. 
 
