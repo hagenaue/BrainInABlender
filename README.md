@@ -1,3 +1,9 @@
+
+####An R package that allows the user to estimate the relative cell type balance in brain cortical samples using microarray or RNAseq data as presented in the manuscript "INFERENCE OF CELL-TYPE COMPOSITION FROM HUMAN BRAIN TRANSCRIPTOMIC DATASETS ILLUMINATES THE EFFECTS OF AGE, MANNER OF DEATH, DISSECTION, AND PSYCHIATRIC DIAGNOSIS" (http://biorxiv.org/content/early/2016/11/25/089391.full.pdf+html) 
+####by *Megan Hastings Hagenauer, Ph.D.1, Jun Z. Li, Ph.D.2, David M. Walsh, Psy.D.3, Marquis P. Vawter, Ph.D.3 Robert C. Thompson, Ph.D.1, Cortney A. Turner, Ph.D.1, William E. Bunney, M.D.3, Richard M. Myers, Ph.D.4, Jack D. Barchas, M.D.5, Alan F. Schatzberg, M.D.6, Stanley J. Watson, M.D., Ph.D.1, Huda Akil, Ph.D.1    
+####1Mol. Behavioral Neurosci. Inst., Univ. of Michigan, Ann Arbor, MI, USA;  2Genet., Univ. of Michigan, Ann Arbor, MI, USA;   3Univ. of California, Irvine, CA; 4HudsonAlpha Inst. for Biotech., Huntsville, AL, USA; 5Stanford, Palo Alto, CA, 6Cornell, New York, NY, USA  
+
+
 ####This package was created using R version 3.3.1
 
 
