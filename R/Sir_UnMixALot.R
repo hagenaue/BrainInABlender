@@ -123,7 +123,7 @@ Sir_UnMixALot<- function(userInput, dataColumns, geneColumn, species){
   if(length(unique(GeneNamesForJoinedInput_NoSD0))==length((GeneNamesForJoinedInput_NoSD0[,1]))){print("All gene symbols are now unique.")}else{
     print("The gene symbols are not unique, the z-scored data will be averaged by gene symbol and then re-z-scored")
     
-    temp<-matrix(0, length(unique(GeneNamesForJoinedInput_NoSD0)), ncol(ZscoreInput))
+    temp<-matrix(0, length(names(table(GeneNamesForJoinedInput_NoSD0[,1]))), ncol(ZscoreInput))
     
     for(i in c(1:ncol(ZscoreInput))){
       temp[,i]<-tapply(ZscoreInput[,i], GeneNamesForJoinedInput_NoSD0[,1], mean)
