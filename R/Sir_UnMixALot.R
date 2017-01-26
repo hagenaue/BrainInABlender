@@ -149,6 +149,9 @@ Sir_UnMixALot<- function(userInput, dataColumns, geneColumn, species){
   colnames(CellTypeSpecificGenes_Master3)[4]<-"GeneSymbol_Human"
   colnames(CellTypeSpecificGenes_Master3)[5]<-"GeneSymbol_Mouse"
   
+  #I'm testing out whether removing the Doyle gene lists improves the signatures.
+  CellTypeSpecificGenes_Master3<-CellTypeSpecificGenes_Master3[CellTypeSpecificGenes_Master3$Citation!="Doyle_Cell_2008", ]
+    
   #MH - the removing NA values code was moved later.
   
   #############################################################
