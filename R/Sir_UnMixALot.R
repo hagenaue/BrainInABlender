@@ -151,7 +151,7 @@ Sir_UnMixALot<- function(userInput, dataColumns, geneColumn, species){
   
   #I'm testing out whether removing the Doyle gene lists improves the signatures.
   CellTypeSpecificGenes_Master3<-CellTypeSpecificGenes_Master3[CellTypeSpecificGenes_Master3$Citation!="Doyle_Cell_2008", ]
-    
+  CellTypeSpecificGenes_Master3<-droplevels(CellTypeSpecificGenes_Master3)
   #MH - the removing NA values code was moved later.
   
   #############################################################
