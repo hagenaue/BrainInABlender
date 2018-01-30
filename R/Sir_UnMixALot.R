@@ -168,7 +168,7 @@ Sir_UnMixALot<- function(userInput, dataColumns, geneColumn, species){
   if (species == "Mouse" || species == "mouse"){
     CellTypeSpecificGenes_Master3NoNA <- CellTypeSpecificGenes_Master3[is.na(CellTypeSpecificGenes_Master3$GeneSymbol_Mouse)==F,]
     colnames(CellTypeSpecificGenes_Master3NoNA)[5] <- "GeneNamesForJoinedInput_NoSD0"
-    ZscoreInput_Expression_CellType<<-join(CellTypeSpecificGenes_Master3NoNA, tempForJoin, by="GeneNamesForJoinedInput_NoSD0", type="inner")
+    ZscoreInput_Expression_CellType<-join(CellTypeSpecificGenes_Master3NoNA, tempForJoin, by="GeneNamesForJoinedInput_NoSD0", type="inner")
     write.csv(ZscoreInput_Expression_CellType, "ZscoreInput_Expression_CellType.csv")
   } else if(species == "Human" || species == "human"){
     CellTypeSpecificGenes_Master3NoNA <- CellTypeSpecificGenes_Master3[is.na(CellTypeSpecificGenes_Master3$GeneSymbol_Human)==F,]
